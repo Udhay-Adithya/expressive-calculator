@@ -61,5 +61,6 @@ dependencies {
     // Extended icons
     implementation(libs.androidx.material.icons.extended)
 
-    //
+    // Parser
+    implementation(libs.mathparser.org.mxparser)
 }
