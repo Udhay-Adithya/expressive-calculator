@@ -13,7 +13,8 @@ class CalculatorViewModel : ViewModel() {
     fun onAction(input: String) {
         when (input) {
             "=" -> calculateResult()
-            "C" -> state = CalculatorState()
+            "AC" -> state = CalculatorState()
+            "D" -> state = state.copy(expression = state.expression.dropLast(1))
             else -> state = state.copy(expression = state.expression + input)
         }
     }
